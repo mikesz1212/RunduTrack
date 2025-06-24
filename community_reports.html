@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community Reports</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@fortawesome/fontawesome-free/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-[#e5f0f8] font-sans text-black">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="w-72 bg-[#f8f9fa] shadow-xl flex flex-col p-6 border-r border-gray-200">
+      <div class="mb-8">
+        <h1 class="text-2xl font-bold text-black">Rundu<span class="text-[#7db6e2]">Track</span></h1>
+        <p class="text-sm text-gray-500">Mapping water vulnerability</p>
+      </div>
+      <nav class="flex flex-col gap-4">
+        <a href="index.html" class="flex items-center gap-2 text-black hover:text-[#7db6e2]"><i class="fas fa-map"></i> Map View</a>
+        <a href="community_reports.html" class="flex items-center gap-2 text-black hover:text-[#7db6e2]"><i class="fas fa-users"></i> Community Reports </a>
+        <a href="./feedback_index.html" class="flex items-center gap-2 text-black hover:text-[#7db6e2]"><i class="fas fa-comment"></i> Feedback Platform</a>
+        <a href="#" class="flex items-center gap-2 text-black hover:text-[#7db6e2]"><i class="fas fa-cog"></i> Settings</a>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-8 overflow-y-auto">
+      <h1 class="text-2xl font-bold mb-4 text-black">Community Reports</h1>
+      <p class="mb-6 text-gray-700">This page displays live community inputs on water collection vulnerabilities.</p>
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/19BpvglYXoIO6vK6tzyzOOVMbGv15qe_W_85sfndPHSc/edit?gid=0#gid=0"
+        width="100%"
+        height="80%"
+        frameborder="0"
+        class="rounded border border-gray-300 shadow">
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
